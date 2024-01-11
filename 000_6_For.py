@@ -24,5 +24,6 @@ for user, status in users.items():
 #list
 for i in range(5):
     print(i)
+# while - подсмотреть
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
