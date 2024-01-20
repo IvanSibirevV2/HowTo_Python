@@ -32,12 +32,6 @@ echo Многострочный %NL%^
 
 
 
-8.3. Handling Exceptions
-8.4. Raising Exceptions
-8.5. Exception Chaining
-8.6. User-defined Exceptions
-8.7. Defining Clean-up Actions
-8.8. Predefined Clean-up Actions
 8.9. Raising and Handling Multiple Unrelated Exceptions
 8.10. Enriching Exceptions with Notes
 9. Classes
