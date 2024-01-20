@@ -32,14 +32,6 @@ echo Многострочный %NL%^
 
 
 
-5.2. The del statement
-5.3. Tuples and Sequences
-5.4. Sets
-5.5. Dictionaries
-5.6. Looping Techniques
-5.7. More on Conditions
-5.8. Comparing Sequences and Other Types
-6. Modules
 6.1. More on Modules
 6.1.1. Executing modules as scripts
 6.1.2. The Module Search Path
