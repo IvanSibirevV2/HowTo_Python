@@ -32,14 +32,6 @@ echo Многострочный %NL%^
 
 
 
-7.1.3. Manual String Formatting
-7.1.4. Old string formatting
-7.2. Reading and Writing Files
-7.2.1. Methods of File Objects
-7.2.2. Saving structured data with json
-8. Errors and Exceptions
-8.1. Syntax Errors
-8.2. Exceptions
 8.3. Handling Exceptions
 8.4. Raising Exceptions
 8.5. Exception Chaining
