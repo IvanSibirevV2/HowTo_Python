@@ -32,8 +32,6 @@ echo Многострочный %NL%^
 
 
 
-10.7. Internet Access
-10.8. Dates and Times
 10.9. Data Compression
 10.10. Performance Measurement
 10.11. Quality Control
