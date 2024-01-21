@@ -32,12 +32,7 @@ echo ћногострочный %NL%^
 
 
 
-10.9. Data Compression
-10.10. Performance Measurement
-10.11. Quality Control
-10.12. Batteries Included
-11. Brief Tour of the Standard Library Ч Part II
-11.1. Output Formatting
+
 11.2. Templating
 11.3. Working with Binary Data Record Layouts
 11.4. Multi-threading
