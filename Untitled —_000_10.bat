@@ -33,18 +33,6 @@ echo Многострочный %NL%^
 
 
 
-11.2. Templating
-11.3. Working with Binary Data Record Layouts
-11.4. Multi-threading
-11.5. Logging
-11.6. Weak References
-11.7. Tools for Working with Lists
-11.8. Decimal Floating Point Arithmetic
-12. Virtual Environments and Packages
-12.1. Introduction
-12.2. Creating Virtual Environments
-12.3. Managing Packages with pip
-13. What Now?
 14. Interactive Input Editing and History Substitution
 14.1. Tab Completion and History Editing
 14.2. Alternatives to the Interactive Interpreter
