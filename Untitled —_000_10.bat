@@ -33,12 +33,6 @@ echo Многострочный %NL%^
 
 
 
-14. Interactive Input Editing and History Substitution
-14.1. Tab Completion and History Editing
-14.2. Alternatives to the Interactive Interpreter
-15. Floating Point Arithmetic: Issues and Limitations
-15.1. Representation Error
-16. Appendix
 16.1. Interactive Mode
 16.1.1. Error Handling
 16.1.2. Executable Python Scripts
