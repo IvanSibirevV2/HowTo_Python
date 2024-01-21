@@ -32,9 +32,6 @@ echo Многострочный %NL%^
 
 
 
-10.4. Error Output Redirection and Program Termination
-10.5. String Pattern Matching
-10.6. Mathematics
 10.7. Internet Access
 10.8. Dates and Times
 10.9. Data Compression
