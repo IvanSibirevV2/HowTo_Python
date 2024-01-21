@@ -32,16 +32,6 @@ echo Многострочный %NL%^
 
 
 
-9.5.1. Multiple Inheritance
-9.6. Private Variables
-9.7. Odds and Ends
-9.8. Iterators
-9.9. Generators
-9.10. Generator Expressions
-10. Brief Tour of the Standard Library
-10.1. Operating System Interface
-10.2. File Wildcards
-10.3. Command Line Arguments
 10.4. Error Output Redirection and Program Termination
 10.5. String Pattern Matching
 10.6. Mathematics
