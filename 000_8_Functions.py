@@ -65,6 +65,15 @@ print(f(1))
 print(f(2))
 print(f(3))
 ##########################################################
-#4.8.2. Keyword Arguments
+#_var1, - одна или несколько переменных
+#*_argS, - массив
+#**_KeyWordS - словарь
+def foo(_var1,*_argS, **_KeyWordS):
+    print("foo>>")
+    print("_var1=", _var1)
+    print("_argS=",_argS)
+    print("_KeyWordS=",_KeyWordS)
+    print("foo<<")
+foo("_Var1Value","Q","W","E", _KeyWord1="_KeyWord1Value",_KeyWord2="_KeyWord2Value",_KeyWord3="_KeyWord3Value" )
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
