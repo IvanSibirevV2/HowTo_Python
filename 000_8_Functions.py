@@ -76,4 +76,14 @@ def foo(_var1,*_argS, **_KeyWordS):
     print("foo<<")
 foo("_Var1Value","Q","W","E", _KeyWord1="_KeyWord1Value",_KeyWord2="_KeyWord2Value",_KeyWord3="_KeyWord3Value" )
 ##########################################################
+# В питоне есть спец пометки
+# После  / идут позиционированные аргументы или ключевые слова
+# После  / - только ключевые слова
+#def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+#      -----------    ----------     ----------
+#        |             |                  |
+#        |        Positional or keyword   |
+#        |                                - Keyword only
+#         -- Positional only
+##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
