@@ -36,4 +36,11 @@ a = ['Mary', 'had', 'a', 'little', 'lamb']
 for i in range(len(a)):
 	print(i, a[i])
 ##########################################################
+#На разбор
+list(range(3, 6))            # normal call with separate arguments
+[3, 4, 5]
+args = [3, 6]
+list(range(*args))            # call with arguments unpacked from a list
+[3, 4, 5]
+##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
