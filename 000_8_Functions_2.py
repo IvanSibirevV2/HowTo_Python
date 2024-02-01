@@ -10,4 +10,12 @@ f = make_incrementor(42)
 print(f(0))
 print(f(1))
 ##########################################################
+#рефлексивное описание параметров функции
+def f(ham: str, eggs: str = 'eggs') -> str:
+    print("Annotations:", f.__annotations__)
+    print("Arguments:", ham, eggs)
+    return ham + ' and ' + eggs
+f('spam')
+##########################################################
+
 test_text = input(" Для завершения программы нажмите Enter: ")
