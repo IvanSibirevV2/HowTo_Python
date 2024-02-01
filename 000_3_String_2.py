@@ -13,6 +13,15 @@ print(word[:2]+word[2:4]+word[4:])
 print('len(word)=',len(word))
 #Строковые переменные не являются изменяемыми
 ##########################################################
+def my_function():
+    """Do nothing, but document it.
+
+    No, really, it doesn't do anything.
+    """
+    pass
+print(my_function.__doc__)
+
+##########################################################
 #на разбор, сохранил ради сепаратора, сама функция работать не будет
 def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
