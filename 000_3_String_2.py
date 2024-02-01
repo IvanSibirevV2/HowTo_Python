@@ -13,4 +13,15 @@ print(word[:2]+word[2:4]+word[4:])
 print('len(word)=',len(word))
 #Строковые переменные не являются изменяемыми
 ##########################################################
+#на разбор, сохранил ради сепаратора, сама функция работать не будет
+def write_multiple_items(file, separator, *args):
+    file.write(separator.join(args))
+def concat(*args, sep="/"):
+    return sep.join(args)
+
+concat("earth", "mars", "venus")
+'earth/mars/venus'
+concat("earth", "mars", "venus", sep=".")
+'earth.mars.venus'
+##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
