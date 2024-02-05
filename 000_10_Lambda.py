@@ -29,8 +29,8 @@ print("[(x, x**2) for x in range(6)]","\n    ",[(x, x**2) for x in range(6)])
 ##########################################################
 # flatten a list using a listcomp with two 'for'
 vec = [[1,2,3], [4,5,6], [7,8,9]]
-[num for elem in vec for num in elem]
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
+print("vec = [[1,2,3], [4,5,6], [7,8,9]]","\n    ",vec)
+print("[num for elem in vec for num in elem]","\n    ",[num for elem in vec for num in elem])
 ##########################################################
 
 test_text = input(" Для завершения программы нажмите Enter: ")
