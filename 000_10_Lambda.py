@@ -32,5 +32,7 @@ vec = [[1,2,3], [4,5,6], [7,8,9]]
 print("vec = [[1,2,3], [4,5,6], [7,8,9]]","\n    ",vec)
 print("[num for elem in vec for num in elem]","\n    ",[num for elem in vec for num in elem])
 ##########################################################
-
+from math import pi
+print("[str(round(pi, i)) for i in range(1, 6)]","\n    ",[str(round(pi, i)) for i in range(1, 6)])
+##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
