@@ -36,11 +36,32 @@ a = ['Mary', 'had', 'a', 'little', 'lamb']
 for i in range(len(a)):
 	print(i, a[i])
 ##########################################################
+#Удаление элемента массива
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+print(a)
+del a[0]
+print(a)
+##
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+print(a)
+del a[2:4]
+print(a)
+##
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+print(a)
+del a[:]
+print(a)
+##
+#Удалить переменную
+del a
+##########################################################
 #На разбор
 list(range(3, 6))            # normal call with separate arguments
 [3, 4, 5]
 args = [3, 6]
 list(range(*args))            # call with arguments unpacked from a list
 [3, 4, 5]
+
+
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
