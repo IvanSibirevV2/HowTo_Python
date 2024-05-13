@@ -25,5 +25,20 @@ for user, status in users.items():
 for i in range(5):
     print(i)
 # while - подсмотреть
+##
+#Цикл по словарю
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+##
+#Цикл по массиву
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+for q, a in zip(['name', 'quest', 'favorite color'], ['lancelot', 'the holy grail', 'blue']):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+##
+#Использование set() для последовательности устраняет повторяющиеся элементы.
+for f in sorted(set(['apple', 'orange', 'apple', 'pear', 'orange', 'banana'])):
+    print(f)
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
