@@ -3,36 +3,28 @@ if os.path.abspath(os.curdir) == os.path.dirname(os.path.realpath(__file__)) :
 	os.system("start notepad++ "+__file__)
 	exit()
 ##########################################################
-#Обратите внимание, очень похоже на кортеж
-a, b = 0, 1
-while a < 10:
-    print(a,b)
-    a, b = b, a+b
-##########################################################
-t = 12345, 54321, 'hello!'
-print(t[0])
-print(t)
 ##
-# Tuples may be nested:
-u = t, (1, 2, 3, 4, 5)
-print(u)
+#Наборы
+basket = set()
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)                      # show that duplicates have been removed
+print('orange' in basket)
+print('crabgrass' in basket)
+# Demonstrate set operations on unique letters from two words
+a = set('abracadabra')
+b = set('alacazam')
 ##
-# Tuples are immutable: -  работать не будет
-# t[0] = 88888
+# unique letters in a
+print(a)
+# letters in a but not in b
+print(a - b)
+# letters in a or b or both
+print(a | b)
+# letters in both a and b
+print(a & b)
+# letters in a or b but not both
+print(a ^ b)
 ##
-# but they can contain mutable objects:
-v = ([1, 2, 3], [3, 2, 1])
-print(v)
-##
-#Созданеи кортежа единичной мощьности (из одного элемента)
-empty = ()
-singleton = 'hello',    # <-- note trailing comma
-print(len(empty))
-print(len(singleton))
-print(singleton)
-##
-#Упаковка\распаковка картежа
-t = 12345, 54321, 'hello!'
-x, y, z = t
+print({x for x in 'abracadabra' if x not in 'abc'})
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
