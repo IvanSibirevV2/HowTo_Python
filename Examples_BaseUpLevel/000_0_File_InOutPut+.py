@@ -5,10 +5,10 @@ if os.path.abspath(os.curdir) == os.path.dirname(os.path.realpath(__file__)) :
 ##########################################################
 #Программный код не работает без
 # 1) os.curdir по умолчанию пустой, нужно вывернуть его в целевую дирректорий
-# 2) пиши полный путь...
+# 2) пиши полный путь к файлу...
 ##
 # - Открыть на запись или чтение - 
-# f = open(file_name, access_mode)
+# f = open(file_name, access_mode, encoding="utf-8")
 # file_name = имя открываемого файла
 # access_mode =
 # r	Только для чтения.
@@ -24,23 +24,39 @@ if os.path.abspath(os.curdir) == os.path.dirname(os.path.realpath(__file__)) :
 # ab	Откроет для добавления нового содержимого (бинарный). Создаст новый файл для записи, если не найдет с указанным именем.
 # ab+	Откроет для добавления нового содержимого (бинарный). Создаст новый файл для чтения записи, если не найдет с указанным именем.
 ##########################################################
+# w+	Для чтения и записи. Создаст новый файл для записи, если не найдет с указанным именем.
+# Предыдущий файл с таким названием удаляется...
 os.curdir=os.path.dirname(os.path.realpath(__file__))
 print(os.curdir)
 my_file = open(os.curdir+"\\"+"BabyFile.txt", "w+")
-my_file.write("и еще кое-что!")
-my_file.write("\n")
+my_file.write("ALT+F4 - для закрытия блокнота в фокусе на нем и продолжения основной программы\n")
+my_file.write("Привет мир!\n")
+my_file.write("Пишу в файл с его пересозданием\n")
 my_file.close()
+print('Открываю файл в блокноте.')
 os.system("notepad "+os.curdir+"\\"+"BabyFile.txt")
 ##
-#
+# a+	Дозапись. Откроет для добавления нового содержимого. Создаст новый файл для чтения записи, если не найдет с указанным именем.
 os.curdir=os.path.dirname(os.path.realpath(__file__))
 print(os.curdir)
 my_file = open(os.curdir+"\\"+"BabyFile.txt", "a+")
-my_file.write("и еще кое-что!")
+my_file.write("Дописываю в конец файла\n")
 my_file.close()
 os.system("notepad "+os.curdir+"\\"+"BabyFile.txt")
+##
+# -  r	Только для чтения.
+os.curdir=os.path.dirname(os.path.realpath(__file__))
+print(os.curdir)
+my_file = open(os.curdir+"\\"+"BabyFile.txt", "r")
+read_data = my_file.read()
+print(read_data)
+my_file.close()
 
+#with open(os.curdir+"\\"+"BabyFile.txt", "r") as f:
+#    read_data = f.read()
+#	print(read_data)
+# We can check that the file has been automatically closed.
+#f.closed
 print('rwerwerwee')
-
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
