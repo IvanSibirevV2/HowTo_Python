@@ -41,22 +41,26 @@ os.curdir=os.path.dirname(os.path.realpath(__file__))
 print(os.curdir)
 my_file = open(os.curdir+"\\"+"BabyFile.txt", "a+")
 my_file.write("Дописываю в конец файла\n")
+my_file.write("!!!!!!!!!!!!!!!!!!!!!!!\n")
 my_file.close()
 os.system("notepad "+os.curdir+"\\"+"BabyFile.txt")
 ##
 # -  r	Только для чтения.
 os.curdir=os.path.dirname(os.path.realpath(__file__))
 print(os.curdir)
+print("Чтение из файла 1")
 my_file = open(os.curdir+"\\"+"BabyFile.txt", "r")
 read_data = my_file.read()
 print(read_data)
 my_file.close()
-
-#with open(os.curdir+"\\"+"BabyFile.txt", "r") as f:
-#    read_data = f.read()
-#	print(read_data)
-# We can check that the file has been automatically closed.
-#f.closed
+##
+#
+print("Чтение из файла 2")
+with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
+	read_data = my_file.read()
+	print(read_data)
+	my_file.close()
 print('rwerwerwee')
+os.system("del "+os.curdir+"\\"+"BabyFile.txt")
 ##########################################################
 test_text = input(" Для завершения программы нажмите Enter: ")
