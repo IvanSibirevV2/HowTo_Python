@@ -60,6 +60,40 @@ with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
 	read_data = my_file.read()
 	print(read_data)
 	my_file.close()
+##
+# - не самый адекватный способ но запомнить нужно
+print("Чтение из файла 3")
+with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
+	print(my_file.readline(), end='')
+	print(my_file.readline(), end='')
+	print(my_file.readline(), end='')
+	print(my_file.readline(), end='')
+	print(my_file.readline(), end='')
+	my_file.close()
+##
+# - на сайте говорят что именно этот способ самый кашерный по производительности и экономии памяти...
+print("Чтение из файла 4")
+with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
+	for line in my_file:
+		print(line, end='')
+	my_file.close()
+##
+# - my_file.readlines() - получает строки файла массивом
+print("Чтение из файла 5")
+with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
+	for line in my_file.readlines():
+		print(line, end='')
+	my_file.close()
+##
+# - list(my_file) - получает строки файла массивом
+print("Чтение из файла 6")
+with open(os.curdir+"\\"+"BabyFile.txt", "r") as my_file:
+	for line in list(my_file):
+		print(line, end='')
+	my_file.close()
+
+##
+#
 print('rwerwerwee')
 os.system("del "+os.curdir+"\\"+"BabyFile.txt")
 ##########################################################
